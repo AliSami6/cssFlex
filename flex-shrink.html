@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+#main div:nth-of-type(4) {
+  flex-shrink: 3;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-shrink Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">1</div>
+  <div style="background-color:lightblue;">2</div>
+  <div style="background-color:khaki;">3</div>
+  <div style="background-color:pink;">4</div>
+  <div style="background-color:lightgrey;">5</div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-shrink property.</p>
+
+</body>
+</html>
